@@ -1,253 +1,1372 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6e9eb">
-  <meta name="description" content="The personal portfolio of Janelle Rubas Esmino, an Information Technology student at Nueva Vizcaya State University.">
-  <title>Developers Profile | IT Student • Developer • Creative Thinker</title>
+  <meta name="theme-color" content="#fff8f5">
+  <meta name="description" content="Janelle Rubas Esmino — IT student, developer, and creative thinker.">
+  <title>Janelle Esmino | Personal Portfolio</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
-    :root{--cream:#fffaf4;--blush:#f6e9eb;--rose:#a25b70;--dust:#e8cdd3;--plum:#624a70;--ink:#40353e;--muted:#6c5c65;--line:#e6d8dd;--shadow:0 14px 40px rgba(93,61,78,.07)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;color:var(--ink);font-family:'DM Sans',system-ui,sans-serif;font-size:16px;line-height:1.75;background:radial-gradient(ellipse at 10% 10%,#efdce4 0,transparent 40%),radial-gradient(ellipse at 95% 35%,#eee5f0 0,transparent 40%),var(--cream)}
-    a{color:inherit;text-decoration:none}button{font:inherit}button,a{-webkit-tap-highlight-color:transparent}img{display:block;max-width:100%}h1,h2,h3,p{margin:0}h1,h2,h3{line-height:1.25}h2{font-family:'Manrope',system-ui,sans-serif;font-size:clamp(1.8rem,4vw,2.5rem);font-weight:600;letter-spacing:-.045em}h3{font-weight:600;font-size:1.15rem}p+p{margin-top:1rem}::selection{background:var(--dust);color:var(--ink)}:focus-visible{outline:3px solid var(--plum);outline-offset:5px;border-radius:4px}
-    .wrap{width:min(1120px,calc(100% - 40px));margin-inline:auto}.section{padding:76px 0;scroll-margin-top:20px}.section-heading{margin-bottom:32px}.eyebrow{text-transform:uppercase;font-weight:600;font-size:.72rem;letter-spacing:.18em;color:var(--rose);margin-bottom:10px}.muted{color:var(--muted)}.school{color:var(--plum);font-weight:500}.handwritten{font-family:'Playfair Display',Georgia,serif}.section-heading .handwritten{display:inline-block;font-size:1.08rem;font-style:italic;color:var(--rose);margin-top:9px;letter-spacing:-.01em}.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:28px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-    .skip-link{position:fixed;top:-100px;left:12px;z-index:100;padding:10px 18px;background:var(--cream);color:var(--plum)}.skip-link:focus{top:10px}.topbar{position:fixed;inset:0 0 auto;z-index:50;background:rgba(255,250,244,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}.nav-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:'Manrope',system-ui,sans-serif;font-weight:600;font-size:1.05rem;letter-spacing:-.04em;white-space:nowrap}.brand span{color:var(--rose)}.brand small{display:block;font-size:.6rem;letter-spacing:.16em;font-weight:500;color:var(--muted)}.nav-links{display:flex;gap:22px;align-items:center}.nav-links a{font-size:.78rem;color:var(--muted);position:relative;padding:12px 0}.nav-links a:hover,.nav-links a[aria-current="location"]{color:var(--plum)}.nav-links a[aria-current="location"]:after{content:'';position:absolute;bottom:4px;left:0;right:0;height:2px;background:var(--rose)}.menu-toggle{display:none;background:transparent;border:1px solid var(--line);border-radius:10px;width:44px;height:44px;color:var(--plum);cursor:pointer}
-    .hero{padding:156px 0 82px;position:relative;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:70px;align-items:center}.hero h1{font-family:'Manrope',system-ui,sans-serif;font-size:clamp(2.8rem,6vw,4.5rem);font-weight:600;letter-spacing:-.06em;margin:18px 0 20px}.hero h1 span{color:var(--rose)}.hello{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:1.55rem;color:var(--plum);letter-spacing:-.015em}.role{font-size:.82rem;font-weight:500;letter-spacing:.025em;margin-bottom:20px;color:var(--plum)}.hero-description{max-width:470px;color:var(--muted)}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 21px;border-radius:12px;font-size:.85rem;font-weight:500;border:1px solid transparent;transition:transform .25s,background .25s,box-shadow .25s;cursor:pointer}.btn:hover{transform:translateY(-2px)}.btn-primary{color:#fff;background:var(--plum);box-shadow:0 5px 16px #624a701c}.btn-primary:hover{background:#513b5e}.btn-secondary{border-color:#c9adb9;background:#fffaf4a6;color:var(--plum)}.btn-secondary:hover{background:#f0e1e7}.hero-footnote{margin-top:26px;display:flex;align-items:flex-start;gap:10px;font-size:.78rem}.hero-footnote i{margin-top:5px;color:var(--rose)}
-    .paper{position:relative;border:1px solid var(--line);border-radius:20px;background-color:var(--cream);box-shadow:var(--shadow)}.notebook{background-image:linear-gradient(90deg,transparent 27px,#b882941c 27px,#b882941c 28px,transparent 28px),repeating-linear-gradient(transparent 0,transparent 31px,#99748b0c 31px,#99748b0c 32px)}.profile-shell{position:relative;padding:15px 12px 0;max-width:370px;width:100%;margin:auto}.hanging-string{position:absolute;top:-28px;left:50%;height:50px;width:1px;background:#b49cae;transform:rotate(6deg)}.pin{position:absolute;top:-29px;left:calc(50% - 5px);width:10px;height:10px;border-radius:50%;background:var(--rose);box-shadow:0 2px 4px #7e536b30}.profile-card{padding:24px 24px 20px;transform:rotate(2deg);transition:transform .5s;animation:sway 10s ease-in-out infinite}.profile-card:hover{animation:none;transform:rotate(0) scale(1.015)}.ribbon{position:absolute;right:28px;top:-6px;width:28px;height:55px;background:#a48aad;clip-path:polygon(0 0,100% 0,100% 100%,50% 80%,0 100%);z-index:2}.photo-frame{aspect-ratio:4/5;border-radius:12px;overflow:hidden;background:linear-gradient(145deg,#ead5dd,#e9dfea);position:relative;display:grid;place-items:center}.photo-frame img{width:100%;height:100%;object-fit:cover;object-position:center;position:absolute;inset:0}.photo-fallback{text-align:center;color:var(--plum);font-family:'Playfair Display',Georgia,serif}.photo-fallback strong{font-size:4rem;font-family:'Playfair Display',Georgia,serif;font-weight:400;line-height:1}.photo-fallback span{display:block;font-size:.75rem;margin-top:16px}.profile-caption{text-align:center;margin-top:18px}.profile-caption strong{font-size:1rem;font-weight:500}.profile-caption p{font-family:'Playfair Display',Georgia,serif;font-size:1.08rem;color:var(--muted)}.sticker{position:absolute;bottom:68px;left:-14px;transform:rotate(-8deg);padding:6px 12px;background:#e7dce9;border:1px solid #c9b6ce;border-radius:6px;color:var(--plum);font-size:.65rem;letter-spacing:.16em;font-weight:600}.sparkle{position:absolute;color:#a587a3;opacity:.4;animation:twinkle 6s ease-in-out infinite;pointer-events:none}.sparkle.one{top:140px;right:9%;font-size:18px}.sparkle.two{bottom:45px;left:48%;font-size:12px;animation-delay:2s}
-    .intro-card{padding:34px 34px 34px 42px}.clip{position:absolute;top:-12px;right:26px;color:#947f99;font-size:25px;transform:rotate(-15deg)}.intro-card h3{margin-bottom:15px}.intro-card p{font-size:.93rem;color:var(--muted)}.detail-card{padding:18px 28px}.details{margin:0}.detail-row{display:grid;grid-template-columns:100px 1fr;gap:16px;padding:15px 0;border-bottom:1px solid var(--line);font-size:.84rem}.detail-row:last-child{border-bottom:0}.detail-row dt{color:var(--muted)}.detail-row dd{margin:0;font-weight:500;overflow-wrap:anywhere}.small-note{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:1.05rem;color:var(--rose);margin-top:22px}
-    .education-list{position:relative;display:grid;gap:18px;padding-left:28px}.education-list:before{content:'';position:absolute;left:6px;top:30px;bottom:30px;width:1px;background:#c8afcc}.education-card{padding:25px 30px;display:flex;gap:22px;align-items:flex-start}.education-card:before{content:'';position:absolute;left:-28px;top:33px;width:13px;height:13px;border:3px solid var(--cream);border-radius:50%;background:var(--rose);box-shadow:0 0 0 1px #c8afcc}.icon-box{width:46px;height:46px;flex-shrink:0;display:grid;place-items:center;background:#eee4ef;border-radius:12px;color:var(--plum);font-size:20px}.education-card .eyebrow{margin-bottom:6px}.education-card p{font-size:.84rem;color:var(--muted);margin-top:7px}.education-card h3{font-size:1.05rem}
-    .project-card{overflow:hidden;transition:transform .3s,box-shadow .3s}.project-card:hover{transform:translateY(-5px);box-shadow:0 20px 45px #5d3d4e12}.project-preview{height:180px;padding:28px;display:grid;place-items:center;border-bottom:1px solid var(--line);background:#eee1e6}.project-preview.systems{background:#e9e3ee}.project-preview.design{background:#f1e8df}.mini-browser{width:100%;max-width:225px;padding:12px;background:var(--cream);border-radius:9px;box-shadow:0 8px 18px #624a7010;transform:rotate(-3deg)}.dots{display:flex;gap:4px;margin-bottom:12px}.dots span{width:5px;height:5px;background:#c7a1b1;border-radius:50%}.browser-content{display:grid;grid-template-columns:1fr 1.4fr;gap:10px}.browser-photo{background:#dbc4d5;border-radius:5px;min-height:65px}.browser-lines span{display:block;height:5px;margin:6px 0;background:#e8d8de;border-radius:3px}.browser-lines span:first-child{width:70%;background:#ae8bb2}.database-art{display:flex;align-items:center;gap:20px;color:#80678c;font-size:45px}.data-lines{display:grid;gap:9px}.data-lines span{display:block;width:65px;height:6px;background:#b5a4c0;border-radius:8px}.design-art{display:flex;align-items:center;gap:10px;transform:rotate(-5deg)}.swatch{height:80px;width:48px;border-radius:28px 28px 8px 8px;background:#c08a9b}.swatch:nth-child(2){background:#b39abd;height:100px}.swatch:nth-child(3){background:#e2cbb8}.project-body{padding:25px}.project-body p{font-size:.84rem;margin:12px 0 18px;color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:7px}.tag{border:1px solid #e2d3df;border-radius:7px;padding:3px 9px;font-size:.68rem;color:var(--plum);background:#fbf6fb}.project-body .btn{margin-top:22px;min-height:42px;padding:8px 0;font-size:.78rem;color:var(--plum)}.sample-label{font-size:.68rem;color:var(--muted);margin-bottom:7px;font-weight:500}.project-disclaimer{font-size:.8rem;color:var(--muted);margin-top:22px}
-    .skill-card{padding:28px}.skill-card h3{margin:16px 0 8px}.skill-card p{font-size:.82rem;color:var(--muted);margin-bottom:20px}.skill-card .tags{gap:10px}.skill-card .tag{font-size:.78rem;padding:6px 12px}.contact-panel{padding:44px;background:linear-gradient(120deg,#fffaf4,#f5eaee);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}.contact-heading{max-width:560px}.contact-heading p{font-size:.93rem;margin-top:14px;color:var(--muted)}.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}.contact-link{display:flex;align-items:center;gap:14px;padding:19px;border:1px solid #dfcbd5;border-radius:14px;background:#fffaf4;transition:background .25s,transform .25s}.contact-link:hover{background:#f0e4ea;transform:translateY(-3px)}.contact-link i{font-size:22px;color:var(--plum)}.contact-link strong{font-size:.85rem;font-weight:500;display:block}.contact-link small{font-size:.7rem;color:var(--muted);display:block}.contact-link[aria-disabled="true"]{cursor:default}.contact-link[aria-disabled="true"]:hover{transform:none;background:#fffaf4}.contact-note{margin-top:16px;font-size:.75rem;color:var(--muted)}footer{padding:32px 0;border-top:1px solid var(--line)}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:.75rem}.footer-inner strong{font-weight:500}.footer-inner p{font-size:.7rem}.footer-copy{text-align:right;color:var(--muted)}
-
-    /* Soft floating flower background */
-    .flower-field{
-      position:fixed;
-      inset:0;
-      z-index:0;
-      overflow:hidden;
-      pointer-events:none;
-      user-select:none;
-    }
-    .flower-field span{
-      position:absolute;
-      bottom:-40px;
-      left:var(--x);
-      color:var(--flower);
-      font-family:Georgia,serif;
-      font-size:var(--size);
-      line-height:1;
-      opacity:var(--opacity);
-      filter:blur(var(--blur));
-      animation:flowerFloat var(--duration) linear var(--delay) infinite;
-      will-change:transform,opacity;
-    }
-    .flower-field span:nth-child(3n){
-      font-family:"Times New Roman",serif;
-    }
-    @keyframes flowerFloat{
-      0%{
-        transform:translate3d(0,0,0) rotate(0deg) scale(.8);
-        opacity:0;
-      }
-      10%{opacity:var(--opacity)}
-      50%{
-        transform:translate3d(var(--drift),-52vh,0) rotate(150deg) scale(1);
-      }
-      90%{opacity:var(--opacity)}
-      100%{
-        transform:translate3d(calc(var(--drift) * -0.45),-112vh,0) rotate(330deg) scale(.9);
-        opacity:0;
-      }
-    }
-    body > *:not(.flower-field){
-      position:relative;
-      z-index:1;
+    :root {
+      --cream: #fffaf6;
+      --pink: #f3dfe5;
+      --rose: #b76e86;
+      --rose-dark: #97546d;
+      --plum: #65516f;
+      --lavender: #eee7f4;
+      --ink: #40343e;
+      --muted: #796a75;
+      --line: #eadde2;
+      --white: rgba(255,255,255,.76);
+      --shadow: 0 18px 55px rgba(104,69,88,.09);
     }
 
-    .reveal{opacity:1;transform:none}.motion-ready .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}.motion-ready .reveal.visible{opacity:1;transform:none}@keyframes sway{0%,100%{transform:rotate(2deg)}50%{transform:rotate(.8deg)}}@keyframes twinkle{0%,100%{opacity:.2}50%{opacity:.55}}
-    @media(min-width:1100px){.nav-links{gap:26px}}@media(max-width:900px){.nav-links{gap:14px}.nav-links a{font-size:.72rem}.hero-grid{gap:30px}.grid-3{grid-template-columns:1fr 1fr}.grid-3>*:last-child{grid-column:1/-1}.contact-grid{grid-template-columns:1fr}.contact-link{padding:16px}.hero h1{font-size:3.1rem}}
-    @media(max-width:767px){.wrap{width:calc(100% - 36px)}.nav-inner{min-height:70px}.menu-toggle{display:inline-grid;place-items:center}.nav-links{position:absolute;top:70px;left:0;right:0;background:var(--cream);padding:14px 22px 22px;display:none;flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid var(--line);box-shadow:0 12px 20px #624a700a}.nav-links.open{display:flex}.nav-links a{font-size:.9rem;padding:11px}.nav-links a[aria-current="location"]:after{display:none}.hero{padding:118px 0 55px}.hero-grid{grid-template-columns:1fr;gap:58px}.hero h1{font-size:clamp(2.9rem,12vw,4rem)}.profile-shell{max-width:310px}.hero-description{max-width:100%}.section{padding:52px 0}.grid-2,.grid-3{grid-template-columns:1fr}.grid-3>*:last-child{grid-column:auto}.intro-card{padding:30px 28px 30px 38px}.detail-card{padding:12px 22px}.education-card{padding:22px 20px;gap:14px}.education-card h3{font-size:.96rem}.icon-box{width:40px;height:40px;font-size:18px}.contact-panel{padding:28px 22px}.footer-inner{flex-direction:column;text-align:center}.footer-copy{text-align:center}.sparkle.two{left:8%;bottom:20px}}
-    @media(prefers-reduced-motion:reduce){.flower-field{display:none}html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.motion-ready .reveal{opacity:1;transform:none}.profile-card{transform:none}.btn:hover,.project-card:hover,.contact-link:hover{transform:none}}
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "DM Sans", sans-serif;
+      line-height: 1.75;
+      background:
+        radial-gradient(ellipse at 8% 12%, #f4e1e8 0, transparent 32%),
+        radial-gradient(ellipse at 95% 38%, #eee6f5 0, transparent 34%),
+        var(--cream);
+      overflow-x: hidden;
+    }
+
+    body, button, a { -webkit-tap-highlight-color: transparent; }
+
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    img { display: block; max-width: 100%; }
+    h1, h2, h3, p { margin: 0; }
+    h1, h2, h3 { line-height: 1.25; }
+
+    ::selection {
+      background: var(--pink);
+      color: var(--ink);
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--plum);
+      outline-offset: 5px;
+    }
+
+    .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    /* Floating flower background */
+
+    .flower-field {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .flower {
+      position: absolute;
+      bottom: -45px;
+      left: var(--x);
+      color: var(--color);
+      font-size: var(--size);
+      opacity: 0;
+      animation: floatFlower var(--duration) linear var(--delay) infinite;
+    }
+
+    @keyframes floatFlower {
+      0% {
+        transform: translateY(0) translateX(0) rotate(0deg);
+        opacity: 0;
+      }
+      12% { opacity: var(--opacity); }
+      50% {
+        transform: translateY(-55vh) translateX(35px) rotate(160deg);
+      }
+      88% { opacity: var(--opacity); }
+      100% {
+        transform: translateY(-115vh) translateX(-20px) rotate(340deg);
+        opacity: 0;
+      }
+    }
+
+    body > *:not(.flower-field) {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Navigation */
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,250,246,.88);
+      border-bottom: 1px solid rgba(234,221,226,.85);
+      backdrop-filter: blur(18px);
+    }
+
+    .nav-inner {
+      min-height: 82px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      font: 700 1.35rem "Manrope", sans-serif;
+      letter-spacing: -.07em;
+      white-space: nowrap;
+    }
+
+    .brand span { color: var(--rose); }
+
+    .brand small {
+      display: block;
+      font: 500 .59rem "DM Sans", sans-serif;
+      letter-spacing: .18em;
+      color: var(--muted);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding: 12px 0;
+      color: var(--muted);
+      font-size: .83rem;
+      transition: color .25s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--rose-dark);
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--rose);
+      transition: width .25s;
+    }
+
+    .nav-links a:hover::after,
+    .nav-links a.active::after {
+      width: 100%;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      color: var(--plum);
+      background: white;
+      cursor: pointer;
+    }
+
+    /* Hero */
+
+    .hero {
+      padding: 105px 0 100px;
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      align-items: center;
+      gap: 80px;
+    }
+
+    .eyebrow {
+      margin-bottom: 12px;
+      color: var(--rose-dark);
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .19em;
+      text-transform: uppercase;
+    }
+
+    .hello {
+      color: var(--plum);
+      font: italic 1.65rem "Playfair Display", serif;
+    }
+
+    .hero h1 {
+      margin: 15px 0 23px;
+      font: 700 clamp(3rem, 6.3vw, 5rem)/1.08 "Manrope", sans-serif;
+      letter-spacing: -.075em;
+    }
+
+    .hero h1 span {
+      color: var(--rose-dark);
+      font-family: "Playfair Display", serif;
+      font-weight: 500;
+      font-style: italic;
+      letter-spacing: -.055em;
+    }
+
+    .role {
+      margin-bottom: 20px;
+      color: var(--plum);
+      font-size: .79rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+    }
+
+    .hero-description {
+      max-width: 490px;
+      color: var(--muted);
+      font-size: .98rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 29px;
+    }
+
+    .btn {
+      min-height: 48px;
+      padding: 12px 21px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 1px solid transparent;
+      border-radius: 13px;
+      font-size: .84rem;
+      font-weight: 600;
+      transition: transform .25s, box-shadow .25s, background .25s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-primary {
+      color: white;
+      background: var(--plum);
+      box-shadow: 0 8px 22px #65516f26;
+    }
+
+    .btn-primary:hover {
+      background: #51405b;
+      box-shadow: 0 12px 26px #65516f32;
+    }
+
+    .btn-secondary {
+      color: var(--plum);
+      background: rgba(255,255,255,.6);
+      border-color: #d9c2cd;
+    }
+
+    .btn-secondary:hover { background: white; }
+
+    .hero-note {
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--muted);
+      font-size: .79rem;
+    }
+
+    .hero-note i { color: var(--rose); }
+
+    /* Profile portrait */
+
+    .profile-shell {
+      width: 100%;
+      max-width: 365px;
+      margin: auto;
+      position: relative;
+      padding: 18px 12px 0;
+    }
+
+    .profile-card {
+      position: relative;
+      padding: 19px 19px 24px;
+      border: 1px solid rgba(255,255,255,.9);
+      border-radius: 23px;
+      background: rgba(255,255,255,.76);
+      box-shadow: 0 25px 70px rgba(104,69,88,.15);
+      transform: rotate(2deg);
+      transition: transform .4s;
+      animation: gentleSway 8s ease-in-out infinite;
+    }
+
+    .profile-card:hover {
+      transform: rotate(0) translateY(-5px);
+      animation-play-state: paused;
+    }
+
+    @keyframes gentleSway {
+      0%, 100% { rotate: 1deg; }
+      50% { rotate: -1deg; }
+    }
+
+    .photo-frame {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+      border-radius: 15px;
+      background: linear-gradient(145deg, #f0d7e1, #e8dff0);
+    }
+
+    .photo-frame::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: inherit;
+      pointer-events: none;
+    }
+
+    .photo-frame img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      inset: 0;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .photo-fallback {
+      height: 100%;
+      display: grid;
+      place-content: center;
+      text-align: center;
+      color: var(--plum);
+    }
+
+    .photo-fallback strong {
+      font: 4rem "Playfair Display", serif;
+    }
+
+    .photo-fallback span {
+      font-size: .8rem;
+    }
+
+    .profile-caption {
+      padding-top: 18px;
+      text-align: center;
+    }
+
+    .profile-caption strong {
+      font: 600 1rem "Manrope", sans-serif;
+    }
+
+    .profile-caption p {
+      color: var(--muted);
+      font: italic 1rem "Playfair Display", serif;
+    }
+
+    .sticker {
+      position: absolute;
+      bottom: 82px;
+      left: -23px;
+      padding: 7px 13px;
+      color: var(--plum);
+      background: #eee5f4;
+      border: 1px solid #d7c7e0;
+      border-radius: 8px;
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      transform: rotate(-8deg);
+      box-shadow: 0 5px 15px #65516f12;
+    }
+
+    .decor-flower {
+      position: absolute;
+      top: -22px;
+      right: -9px;
+      color: var(--rose);
+      font-size: 2rem;
+      transform: rotate(14deg);
+    }
+
+    /* Sections */
+
+    .section {
+      padding: 88px 0;
+      scroll-margin-top: 70px;
+    }
+
+    .section-heading {
+      margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+      font: 700 clamp(2rem, 4vw, 2.8rem)/1.2 "Manrope", sans-serif;
+      letter-spacing: -.065em;
+    }
+
+    .section-heading h2 span { color: var(--rose-dark); }
+
+    .section-subtitle {
+      display: inline-block;
+      margin-top: 9px;
+      color: var(--rose-dark);
+      font: italic 1.13rem "Playfair Display", serif;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(234,221,226,.9);
+      border-radius: 21px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+      transition: transform .3s, box-shadow .3s, border-color .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #dfbdcb;
+      box-shadow: 0 25px 60px rgba(104,69,88,.13);
+    }
+
+    .about-card {
+      padding: 35px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.92), rgba(249,237,242,.82));
+    }
+
+    .about-card h3,
+    .card h3 {
+      margin-bottom: 13px;
+      font: 700 1.15rem "Manrope", sans-serif;
+      letter-spacing: -.025em;
+    }
+
+    .about-card p,
+    .card p {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .about-card p + p { margin-top: 15px; }
+
+    .personal-note {
+      margin-top: 23px;
+      color: var(--rose-dark);
+      font: italic 1.12rem "Playfair Display", serif;
+    }
+
+    .details-card { padding: 20px 28px; }
+
+    .detail-row {
+      display: grid;
+      grid-template-columns: 105px 1fr;
+      gap: 12px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: .85rem;
+    }
+
+    .detail-row:last-child { border-bottom: 0; }
+    .detail-row dt { color: var(--muted); }
+    .detail-row dd { margin: 0; font-weight: 600; overflow-wrap: anywhere; }
+
+    .school { color: var(--plum); }
+
+    /* Education timeline */
+
+    .timeline {
+      position: relative;
+      display: grid;
+      gap: 20px;
+      padding-left: 27px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 28px;
+      bottom: 28px;
+      width: 1px;
+      background: #d7bfd0;
+    }
+
+    .education-card {
+      padding: 25px 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+
+    .education-card::before {
+      content: "";
+      position: absolute;
+      top: 31px;
+      left: -28px;
+      width: 12px;
+      height: 12px;
+      border: 3px solid var(--cream);
+      border-radius: 50%;
+      background: var(--rose);
+      box-shadow: 0 0 0 1px #d7bfd0;
+    }
+
+    .icon-box {
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      color: var(--plum);
+      background: var(--lavender);
+      font-size: 1.2rem;
+    }
+
+    .education-card .eyebrow { margin-bottom: 6px; }
+    .education-card h3 { margin: 0; }
+    .education-card p { margin-top: 7px; }
+
+    /* Project cards */
+
+    .project-preview {
+      height: 185px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      background: linear-gradient(140deg, #f4dfe6, #e9e0f1);
+    }
+
+    .project-preview.purple {
+      background: linear-gradient(140deg, #eee7f5, #dcd0e7);
+    }
+
+    .project-preview.peach {
+      background: linear-gradient(140deg, #f5e9df, #edd8e2);
+    }
+
+    .mini-browser {
+      width: 76%;
+      padding: 13px;
+      border: 1px solid white;
+      border-radius: 11px;
+      background: rgba(255,255,255,.8);
+      box-shadow: 0 12px 28px #65516f17;
+      transform: rotate(-3deg);
+      transition: transform .35s;
+    }
+
+    .project-card:hover .mini-browser {
+      transform: rotate(0) scale(1.04);
+    }
+
+    .dots {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 12px;
+    }
+
+    .dots span {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #d2a4b6;
+    }
+
+    .browser-content {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 10px;
+    }
+
+    .browser-photo {
+      min-height: 66px;
+      border-radius: 6px;
+      background: linear-gradient(150deg, #d6b7ca, #e9d9e8);
+    }
+
+    .browser-lines span {
+      display: block;
+      height: 5px;
+      margin: 7px 0;
+      border-radius: 5px;
+      background: #e7dce6;
+    }
+
+    .browser-lines span:first-child {
+      width: 70%;
+      background: #b38aaa;
+    }
+
+    .database-art {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: #80678c;
+      font-size: 3rem;
+    }
+
+    .data-lines { display: grid; gap: 9px; }
+
+    .data-lines span {
+      display: block;
+      width: 68px;
+      height: 6px;
+      border-radius: 8px;
+      background: #b5a4c0;
+    }
+
+    .design-art {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      transform: rotate(-5deg);
+    }
+
+    .swatch {
+      width: 45px;
+      height: 80px;
+      border-radius: 24px 24px 8px 8px;
+      background: #c08a9b;
+    }
+
+    .swatch:nth-child(2) {
+      height: 103px;
+      background: #b39abd;
+    }
+
+    .swatch:nth-child(3) { background: #e2cbb8; }
+
+    .project-body { padding: 25px; }
+
+    .sample-label {
+      margin-bottom: 8px;
+      color: var(--rose-dark);
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+    }
+
+    .project-body p {
+      margin: 12px 0 18px;
+      font-size: .85rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .tag {
+      padding: 5px 10px;
+      border: 1px solid #e7d5e0;
+      border-radius: 8px;
+      color: var(--plum);
+      background: #fcf7fb;
+      font-size: .69rem;
+    }
+
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-top: 22px;
+      color: var(--plum);
+      font-size: .8rem;
+      font-weight: 700;
+    }
+
+    .project-link i { transition: transform .25s; }
+    .project-link:hover i { transform: translateX(4px); }
+
+    .disclaimer {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: .8rem;
+    }
+
+    /* Skills */
+
+    .skill-card { padding: 29px; }
+
+    .skill-card .icon-box { margin-bottom: 19px; }
+
+    .skill-card h3 { margin-bottom: 10px; }
+
+    .skill-card p { margin-bottom: 20px; }
+
+    .skill-card .tag {
+      padding: 6px 11px;
+      font-size: .75rem;
+    }
+
+    /* Contact */
+
+    .contact-panel {
+      padding: clamp(28px, 5vw, 55px);
+      border: 1px solid #ead9e1;
+      border-radius: 27px;
+      background:
+        radial-gradient(ellipse at 100% 0, #eee4f4 0, transparent 40%),
+        linear-gradient(125deg, #fffdfb, #f8eaf0);
+      box-shadow: var(--shadow);
+    }
+
+    .contact-heading { max-width: 590px; }
+
+    .contact-heading p {
+      margin-top: 15px;
+      color: var(--muted);
+      font-size: .94rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 18px;
+      border: 1px solid #e5d2dc;
+      border-radius: 15px;
+      background: rgba(255,255,255,.72);
+      transition: transform .25s, background .25s;
+    }
+
+    .contact-link:hover {
+      transform: translateY(-4px);
+      background: white;
+    }
+
+    .contact-link i {
+      color: var(--plum);
+      font-size: 1.35rem;
+    }
+
+    .contact-link strong {
+      display: block;
+      font-size: .84rem;
+    }
+
+    .contact-link small {
+      display: block;
+      color: var(--muted);
+      font-size: .68rem;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-note {
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: .76rem;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 30px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .footer-inner strong { font: 700 1rem "Manrope", sans-serif; }
+    .footer-inner p { color: var(--muted); font-size: .75rem; }
+    .footer-copy { text-align: right; }
+
+    /* Scroll reveal */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive layout */
+
+    @media (max-width: 900px) {
+      .nav-links { gap: 15px; }
+      .nav-links a { font-size: .75rem; }
+      .hero-grid { gap: 35px; }
+      .grid-3 { grid-template-columns: repeat(2, 1fr); }
+      .grid-3 > :last-child { grid-column: 1 / -1; }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 700px) {
+      .wrap { width: calc(100% - 34px); }
+
+      .nav-inner { min-height: 72px; }
+      .menu-toggle { display: grid; place-items: center; }
+
+      .nav-links {
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 12px 22px 22px;
+        background: var(--cream);
+        border-bottom: 1px solid var(--line);
+        box-shadow: 0 15px 25px #65516f10;
+      }
+
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 12px 0; font-size: .9rem; }
+
+      .hero { padding: 65px 0 70px; }
+      .hero-grid { grid-template-columns: 1fr; gap: 55px; }
+      .hero h1 { font-size: clamp(3rem, 12vw, 4.2rem); }
+      .profile-shell { max-width: 320px; }
+
+      .section { padding: 62px 0; }
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .grid-3 > :last-child { grid-column: auto; }
+
+      .about-card { padding: 28px; }
+      .details-card { padding: 12px 22px; }
+      .education-card { padding: 22px 18px; gap: 14px; }
+      .icon-box { width: 43px; height: 43px; }
+      .contact-panel { padding: 27px 21px; }
+
+      .footer-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-copy { text-align: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+      .flower-field { display: none; }
+      .reveal { opacity: 1; transform: none; }
+    }
   </style>
 </head>
+
 <body>
-  <a href="#main" class="skip-link">Skip to main content</a>
+  <!-- Floating flowers -->
+  <div class="flower-field" aria-hidden="true">
+    <span class="flower" style="--x:5%;--size:15px;--duration:19s;--delay:-4s;--opacity:.38;--color:#d99aaa">✿</span>
+    <span class="flower" style="--x:13%;--size:10px;--duration:24s;--delay:-13s;--opacity:.28;--color:#e2a8b6">✽</span>
+    <span class="flower" style="--x:22%;--size:17px;--duration:21s;--delay:-8s;--opacity:.32;--color:#c98599">✿</span>
+    <span class="flower" style="--x:31%;--size:11px;--duration:26s;--delay:-17s;--opacity:.25;--color:#e4aeba">✽</span>
+    <span class="flower" style="--x:40%;--size:14px;--duration:20s;--delay:-11s;--opacity:.34;--color:#d494a6">✿</span>
+    <span class="flower" style="--x:49%;--size:9px;--duration:25s;--delay:-3s;--opacity:.26;--color:#e3a7b5">✽</span>
+    <span class="flower" style="--x:58%;--size:16px;--duration:22s;--delay:-16s;--opacity:.3;--color:#cc879a">✿</span>
+    <span class="flower" style="--x:67%;--size:10px;--duration:27s;--delay:-7s;--opacity:.24;--color:#dfa2b1">✽</span>
+    <span class="flower" style="--x:76%;--size:15px;--duration:20s;--delay:-14s;--opacity:.33;--color:#ce899c">✿</span>
+    <span class="flower" style="--x:85%;--size:9px;--duration:24s;--delay:-2s;--opacity:.25;--color:#e1a5b3">✽</span>
+    <span class="flower" style="--x:94%;--size:14px;--duration:23s;--delay:-19s;--opacity:.3;--color:#d795a5">✿</span>
+  </div>
+
+  <a href="#main" class="skip-link" style="position:absolute;left:-9999px">Skip to content</a>
+
   <header class="topbar">
     <nav class="wrap nav-inner" aria-label="Main navigation">
-      <a href="#home" class="brand" aria-label="Janelle Esmino, home">janelle<span>.</span><small>IT STUDENT  •  CREATIVE EXPLORER</small></a>
-      <button id="menu-toggle" class="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Open navigation"><i class="fa fa-bars" aria-hidden="true"></i></button>
+      <a href="#home" class="brand">janelle<span>.</span>
+        <small>IT STUDENT • CREATIVE EXPLORER</small>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+
       <div class="nav-links" id="nav-links">
-        <a href="#home" aria-current="location">Home</a><a href="#information">My Information</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#skills">My Skills</a><a href="#contact">Contact</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#information">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
+
   <main id="main">
-    <section id="home" class="hero" aria-labelledby="home-title">
-      <span class="sparkle one" aria-hidden="true">✧</span><span class="sparkle two" aria-hidden="true">✦</span>
+    <!-- Hero -->
+    <section id="home" class="hero">
       <div class="wrap hero-grid">
-        <div>
-          <p class="handwritten hello">Hello, I'm Janelle.</p>
-          <h1 id="home-title">I like to <span>build things.</span><br>and understand how they work.</h1>
+        <div class="reveal">
+          <p class="hello">Hello, I'm Janelle.</p>
+          <h1>I like to build things and <span>understand how they work.</span></h1>
           <p class="role">IT STUDENT &nbsp;•&nbsp; DEVELOPER &nbsp;•&nbsp; CREATIVE THINKER</p>
-          <p class="hero-description">I'm Janelle Rubas Esmino, an Information Technology student who enjoys turning ideas into something useful, organized, and easy to understand. I'm still learning, but I like the process of figuring things out, solving problems, and making each project better than the last.</p>
-          <div class="actions"><a class="btn btn-primary" href="#information">Get to know me <i class="fa fa-arrow-right" aria-hidden="true"></i></a><a class="btn btn-secondary" href="#contact"><i class="fa fa-envelope-o" aria-hidden="true"></i> Say hello</a></div>
-          <p class="hero-footnote"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span class="school">Information Technology • Nueva Vizcaya State University</span></p>
+          <p class="hero-description">
+            I'm an Information Technology student who enjoys exploring ideas,
+            figuring things out, and turning small thoughts into something useful.
+            I believe good work comes from curiosity, patience, and a willingness
+            to keep learning.
+          </p>
+
+          <div class="actions">
+            <a class="btn btn-primary" href="#projects">Explore my work <i class="fa fa-arrow-right"></i></a>
+            <a class="btn btn-secondary" href="#contact"><i class="fa fa-envelope-o"></i> Say hello</a>
+          </div>
+
+          <p class="hero-note">
+            <i class="fa fa-graduation-cap"></i>
+            Nueva Vizcaya State University
+          </p>
         </div>
-        <div class="profile-shell">
-          <div class="hanging-string" aria-hidden="true"></div><div class="pin" aria-hidden="true"></div>
-          <figure class="paper notebook profile-card">
-            <span class="ribbon" aria-hidden="true"></span>
+
+        <div class="profile-shell reveal">
+          <span class="decor-flower" aria-hidden="true">✿</span>
+          <figure class="profile-card">
             <div class="photo-frame">
-              <div class="photo-fallback" id="photo-fallback" role="img" aria-label="Janelle Esmino initials; profile photo not yet available"><strong>JE</strong><span>Profile photo coming soon</span></div>
-              <!-- Put me.jpg beside this HTML file. -->
-              <img id="me.jpg" src="me.jpg" alt="Portrait of Janelle Rubas Esmino" width="600" height="750" fetchpriority="high" onload="document.getElementById('photo-fallback').hidden=true" onerror="this.hidden=true;document.getElementById('photo-fallback').hidden=false">
+              <div class="photo-fallback" id="photo-fallback">
+                <strong>JE</strong>
+                <span>Profile photo</span>
+              </div>
+              <img
+                id="profile-photo"
+                src="me.png"
+                alt="Portrait of Janelle Rubas Esmino"
+                onload="document.getElementById('photo-fallback').hidden=true"
+                onerror="this.hidden=true"
+              >
             </div>
-            <figcaption class="profile-caption"><strong>Janelle Rubas Esmino</strong><p>Learning, creating, becoming.</p></figcaption>
-            <span class="sticker" aria-hidden="true">STILL LEARNING</span>
+            <figcaption class="profile-caption">
+              <strong>Janelle Rubas Esmino</strong>
+              <p>Learning, creating, becoming.</p>
+            </figcaption>
+            <span class="sticker">A WORK IN PROGRESS ✧</span>
           </figure>
         </div>
       </div>
     </section>
-    <section id="information" class="section" aria-labelledby="information-title">
+
+    <!-- About -->
+    <section id="information" class="section">
       <div class="wrap">
-        <div class="section-heading reveal"><p class="eyebrow">01 / Beyond the code</p><h2 id="information-title">A Little About Me</h2><span class="handwritten">The person behind the screen.</span></div>
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 / Beyond the screen</p>
+          <h2>A little <span>about me.</span></h2>
+          <span class="section-subtitle">The person behind the projects.</span>
+        </div>
+
         <div class="grid-2">
-          <article class="paper notebook intro-card reveal"><i class="fa fa-paperclip clip" aria-hidden="true"></i><h3>Curious, practical, and always figuring things out.</h3><p>I'm Janelle, an Information Technology student at <span class="school">Nueva Vizcaya State University</span>. I enjoy learning how systems work, turning ideas into working solutions, and finding simpler ways to make things clear and useful.</p><p>I care about the details, but I also like keeping things practical. For me, a good project is not only something that looks nice—it should make sense, work properly, and solve an actual problem.</p><p>I'm building my skills one project at a time, learning from mistakes, improving what I make, and becoming more confident with every new challenge.</p><div class="small-note">Learning by doing, improving as I go.</div></article>
-          <div class="paper detail-card reveal"><dl class="details">
-            <div class="detail-row"><dt>Full name</dt><dd>Janelle Rubas Esmino</dd></div>
-            <div class="detail-row"><dt>Course</dt><dd>Information Technology</dd></div>
-            <div class="detail-row"><dt>University</dt><dd class="school">Nueva Vizcaya State University</dd></div>
-            <div class="detail-row"><dt>Birthday</dt><dd><time datetime="2006-09-21">September 21, 2006</time></dd></div>
-            <div class="detail-row"><dt>Status</dt><dd>Single</dd></div>
-          </dl></div>
+          <article class="card about-card reveal">
+            <h3>Curious by nature, creative by choice.</h3>
+            <p>
+              I'm Janelle, an Information Technology student at Nueva Vizcaya
+              State University. I'm interested in how technology works and how
+              thoughtful design can make digital experiences easier to use.
+            </p>
+            <p>
+              I enjoy learning through experimentation, organizing ideas, and
+              finding ways to make things better. I may not know everything yet,
+              but I'm willing to ask questions, work through challenges, and
+              improve one step at a time.
+            </p>
+            <p>
+              This portfolio is more than a collection of pages. It's a record
+              of what I'm learning, what I'm trying, and the person I'm becoming
+              along the way.
+            </p>
+            <div class="personal-note">"Little by little, I build something meaningful."</div>
+          </article>
+
+          <div class="card details-card reveal">
+            <dl>
+              <div class="detail-row"><dt>Full name</dt><dd>Janelle Rubas Esmino</dd></div>
+              <div class="detail-row"><dt>Course</dt><dd>Information Technology</dd></div>
+              <div class="detail-row"><dt>University</dt><dd class="school">Nueva Vizcaya State University</dd></div>
+              <div class="detail-row"><dt>Birthday</dt><dd><time datetime="2006-09-21">September 21, 2006</time></dd></div>
+              <div class="detail-row"><dt>Status</dt><dd>Single</dd></div>
+              <div class="detail-row"><dt>Interests</dt><dd>Technology, design, learning</dd></div>
+              <div class="detail-row"><dt>Mindset</dt><dd>Curious and growing</dd></div>
+            </dl>
+          </div>
         </div>
       </div>
     </section>
-    <section id="education" class="section" aria-labelledby="education-title">
+
+    <!-- Education -->
+    <section id="education" class="section">
       <div class="wrap">
-        <div class="section-heading reveal"><p class="eyebrow">02 / Where I'm learning</p><h2 id="education-title">Education</h2><span class="handwritten">The foundation behind what I'm building.</span></div>
-        <div class="education-list">
-          <article class="paper education-card reveal"><div class="icon-box"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div><div><p class="eyebrow">College • Current studies</p><h3 class="school">Nueva Vizcaya State University</h3><p>Information Technology</p></div></article>
-          <article class="paper education-card reveal"><div class="icon-box"><i class="fa fa-book" aria-hidden="true"></i></div><div><p class="eyebrow">High School</p><h3 class="school">Bonfal National High School</h3><p>Secondary education</p></div></article>
-          <article class="paper education-card reveal"><div class="icon-box"><i class="fa fa-pencil" aria-hidden="true"></i></div><div><p class="eyebrow">Elementary</p><h3 class="school">North Cabadbaran Central Elementary School</h3><p>Primary education</p></div></article>
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / My learning journey</p>
+          <h2>Where it <span>all begins.</span></h2>
+          <span class="section-subtitle">Every chapter teaches me something new.</span>
+        </div>
+
+        <div class="timeline">
+          <article class="card education-card reveal">
+            <div class="icon-box"><i class="fa fa-graduation-cap"></i></div>
+            <div>
+              <p class="eyebrow">College • Current studies</p>
+              <h3>Nueva Vizcaya State University</h3>
+              <p>Information Technology</p>
+            </div>
+          </article>
+
+          <article class="card education-card reveal">
+            <div class="icon-box"><i class="fa fa-book"></i></div>
+            <div>
+              <p class="eyebrow">High School</p>
+              <h3>Bonfal National High School</h3>
+              <p>Secondary education</p>
+            </div>
+          </article>
+
+          <article class="card education-card reveal">
+            <div class="icon-box"><i class="fa fa-pencil"></i></div>
+            <div>
+              <p class="eyebrow">Elementary</p>
+              <h3>North Cabadbaran Central Elementary School</h3>
+              <p>Primary education</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
-    <section id="projects" class="section" aria-labelledby="projects-title">
+
+    <!-- Projects -->
+    <section id="projects" class="section">
       <div class="wrap">
-        <div class="section-heading reveal"><p class="eyebrow">03 / Things I'm building</p><h2 id="projects-title">Projects &amp; Practice</h2><span class="handwritten">Small ideas, real learning, steady progress.</span></div>
-        <!-- Sample showcases only: replace these with actual project titles, tools, descriptions and links. -->
+        <div class="section-heading reveal">
+          <p class="eyebrow">03 / Ideas into experiences</p>
+          <h2>Things I'm <span>exploring.</span></h2>
+          <span class="section-subtitle">A growing collection of ideas and practice.</span>
+        </div>
+
         <div class="grid-3">
-          <article class="paper project-card reveal"><div class="project-preview" aria-hidden="true"><div class="mini-browser"><div class="dots"><span></span><span></span><span></span></div><div class="browser-content"><div class="browser-photo"></div><div class="browser-lines"><span></span><span></span><span></span><span></span></div></div></div></div><div class="project-body"><div class="sample-label">PORTFOLIO / WEB DEVELOPMENT</div><h3>Personal Portfolio</h3><p>A responsive personal website built to bring my work, interests, and learning journey into one clear and thoughtful space.</p><div class="tags" aria-label="Example project tools"><span class="tag">HTML</span><span class="tag">CSS / Tailwind</span><span class="tag">JavaScript</span></div><a href="#home" class="btn">View this space <i class="fa fa-arrow-right" aria-hidden="true"></i></a></div></article>
-          <article class="paper project-card reveal"><div class="project-preview systems" aria-hidden="true"><div class="database-art"><i class="fa fa-database"></i><div class="data-lines"><span></span><span></span><span></span></div></div></div><div class="project-body"><div class="sample-label">SYSTEMS / DATA &amp; ORGANIZATION</div><h3>Student Records Concept</h3><p>A concept focused on organized records, practical workflows, and understanding how information can be structured into a useful system.</p><div class="tags" aria-label="Example project skills"><span class="tag">Systems</span><span class="tag">Data organization</span><span class="tag">Research</span></div><a class="btn" href="#contact">Let's talk <i class="fa fa-arrow-right" aria-hidden="true"></i></a></div></article>
-          <article class="paper project-card reveal"><div class="project-preview design" aria-hidden="true"><div class="design-art"><div class="swatch"></div><div class="swatch"></div><div class="swatch"></div></div></div><div class="project-body"><div class="sample-label">CREATIVE PRACTICE / VISUAL DESIGN</div><h3>Visual Design Collection</h3><p>A growing space for exploring layouts, typography, color, and the visual details that make digital work feel intentional.</p><div class="tags" aria-label="Example project skills"><span class="tag">Layout</span><span class="tag">Typography</span><span class="tag">Color</span></div><a class="btn" href="#contact">Share an idea <i class="fa fa-arrow-right" aria-hidden="true"></i></a></div></article>
+          <article class="card project-card reveal">
+            <div class="project-preview">
+              <div class="mini-browser">
+                <div class="dots"><span></span><span></span><span></span></div>
+                <div class="browser-content">
+                  <div class="browser-photo"></div>
+                  <div class="browser-lines"><span></span><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="sample-label">WEB DEVELOPMENT</div>
+              <h3>Personal Portfolio</h3>
+              <p>A personal website that brings my interests, learning journey, and creative identity together in one place.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <a href="#home" class="project-link">View this space <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-preview purple">
+              <div class="database-art">
+                <i class="fa fa-database"></i>
+                <div class="data-lines"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="sample-label">SYSTEMS &amp; DATA</div>
+              <h3>Student Records Concept</h3>
+              <p>A practice concept focused on organized records, practical workflows, and understanding how information becomes useful.</p>
+              <div class="tags"><span class="tag">Systems</span><span class="tag">Data</span><span class="tag">Research</span></div>
+              <a href="#contact" class="project-link">Let's talk <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-preview peach">
+              <div class="design-art"><div class="swatch"></div><div class="swatch"></div><div class="swatch"></div></div>
+            </div>
+            <div class="project-body">
+              <div class="sample-label">CREATIVE PRACTICE</div>
+              <h3>Visual Design Collection</h3>
+              <p>A space for exploring layouts, typography, colors, and the details that make digital work feel intentional.</p>
+              <div class="tags"><span class="tag">Layout</span><span class="tag">Typography</span><span class="tag">Color</span></div>
+              <a href="#contact" class="project-link">Share an idea <i class="fa fa-arrow-right"></i></a>
+            </div>
+          </article>
         </div>
-        <p class="project-disclaimer">This space grows with me. Some pieces are practice concepts, while others will become real projects as I continue learning and building.</p>
+
+        <p class="disclaimer">
+          These project cards are examples and practice concepts. Replace them
+          with your actual projects as your portfolio grows.
+        </p>
       </div>
     </section>
-    <section id="skills" class="section" aria-labelledby="skills-title">
+
+    <!-- Skills -->
+    <section id="skills" class="section">
       <div class="wrap">
-        <div class="section-heading reveal"><p class="eyebrow">04 / What I'm learning</p><h2 id="skills-title">My Skills &amp; Interests</h2><span class="handwritten">Still growing, still curious.</span></div>
-        <!-- No proficiency percentages are used because skill levels were not supplied. -->
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 / My growing toolkit</p>
+          <h2>Skills &amp; <span>interests.</span></h2>
+          <span class="section-subtitle">Still growing, still curious.</span>
+        </div>
+
         <div class="grid-3">
-          <article class="paper skill-card reveal"><div class="icon-box"><i class="fa fa-code" aria-hidden="true"></i></div><h3>Web &amp; Development</h3><p>I enjoy the process of turning an idea into a working page or system and understanding what happens behind the interface.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Coding</span></div></article>
-          <article class="paper skill-card reveal"><div class="icon-box"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></div><h3>Design &amp; Problem-Solving</h3><p>I like making things feel organized and intentional while thinking through how the pieces work together.</p><div class="tags"><span class="tag">Design</span><span class="tag">Systems</span><span class="tag">Problem-solving</span></div></article>
-          <article class="paper skill-card reveal"><div class="icon-box"><i class="fa fa-users" aria-hidden="true"></i></div><h3>Learning &amp; Collaboration</h3><p>I value clear communication, organized work, and learning from the people and projects around me.</p><div class="tags"><span class="tag">Research</span><span class="tag">Teamwork</span><span class="tag">Continuous learning</span></div></article>
+          <article class="card skill-card reveal">
+            <div class="icon-box"><i class="fa fa-code"></i></div>
+            <h3>Web &amp; Development</h3>
+            <p>I enjoy turning ideas into working pages and learning what happens behind the interface.</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Coding</span></div>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="icon-box"><i class="fa fa-lightbulb-o"></i></div>
+            <h3>Design &amp; Problem-Solving</h3>
+            <p>I like making things feel organized and intentional while thinking through how the pieces work together.</p>
+            <div class="tags"><span class="tag">Design</span><span class="tag">Systems</span><span class="tag">Problem-solving</span></div>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="icon-box"><i class="fa fa-users"></i></div>
+            <h3>Learning &amp; Collaboration</h3>
+            <p>I value clear communication, teamwork, and learning from the people and projects around me.</p>
+            <div class="tags"><span class="tag">Research</span><span class="tag">Teamwork</span><span class="tag">Continuous learning</span></div>
+          </article>
         </div>
       </div>
     </section>
-    <section id="contact" class="section" aria-labelledby="contact-title">
-      <div class="wrap"><div class="contact-panel reveal">
-        <div class="contact-heading"><p class="eyebrow">05 / Say hello</p><h2 id="contact-title">Let's make something useful.</h2><p>Whether it's a project, an idea, or simply a conversation about technology and learning, I'm always open to connecting and seeing where an idea can go.</p></div>
-        <!-- Set real contact details in CONFIG below. Unconfigured links remain clearly unavailable. -->
-        <div class="contact-grid">
-          <a id="contact-email" class="contact-link" role="link" aria-disabled="true"><i class="fa fa-envelope-o" aria-hidden="true"></i><span><strong>Email</strong><small>Add email address</small></span></a>
-          <a id="contact-facebook" class="contact-link" role="link" aria-disabled="true"><i class="fa fa-facebook" aria-hidden="true"></i><span><strong>Facebook</strong><small>Add profile URL</small></span></a>
-          <a id="contact-github" class="contact-link" role="link" aria-disabled="true"><i class="fa fa-github" aria-hidden="true"></i><span><strong>GitHub</strong><small>Add profile URL</small></span></a>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="wrap">
+        <div class="contact-panel reveal">
+          <div class="contact-heading">
+            <p class="eyebrow">05 / Start a conversation</p>
+            <h2>Let's make something <span>meaningful.</span></h2>
+            <p>
+              Have an idea, a project, or something interesting to share?
+              I'm open to connecting, learning from others, and exploring
+              where a good idea might lead.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <a id="contact-email" class="contact-link" aria-disabled="true">
+              <i class="fa fa-envelope-o"></i>
+              <span><strong>Email</strong><small>Add email address</small></span>
+            </a>
+
+            <a id="contact-facebook" class="contact-link" aria-disabled="true">
+              <i class="fa fa-facebook"></i>
+              <span><strong>Facebook</strong><small>Add profile URL</small></span>
+            </a>
+
+            <a id="contact-github" class="contact-link" aria-disabled="true">
+              <i class="fa fa-github"></i>
+              <span><strong>GitHub</strong><small>Add profile URL</small></span>
+            </a>
+          </div>
+
+          <p id="contact-note" class="contact-note">
+            My contact details will appear here once I add my links.
+          </p>
         </div>
-        <p id="contact-note" class="contact-note">My contact details will be added here as this portfolio continues to grow.</p>
-      </div></div>
+      </div>
     </section>
   </main>
-  <footer><div class="wrap footer-inner"><div><strong>Janelle Rubas Esmino</strong><p class="school">Nueva Vizcaya State University</p></div><div class="footer-copy">© <span id="year">2026</span> Janelle Esmino. All rights reserved.<p>Made with curiosity, patience, and a little creativity.</p></div></div></footer>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div>
+        <strong>Janelle Rubas Esmino</strong>
+        <p class="school">Nueva Vizcaya State University</p>
+      </div>
+      <div class="footer-copy">
+        <p>© <span id="year"></span> Janelle Esmino. All rights reserved.</p>
+        <p>Made with curiosity, patience, and a little creativity.</p>
+      </div>
+    </div>
+  </footer>
+
   <script>
-    /* EDIT HERE: leave empty until real details are available. */
+    // Add your actual contact details here.
     const CONFIG = {
-      email: 'jajanellerubasesmino@gmail.com',                 // Example format: yourname@example.com
-      facebook: 'Janelle Esmimo',              // Full https://www.facebook.com/... URL
-      instagram: 'iellecaramel'                 // Full https://instagram.com/... URL
+      email: "",
+      facebook: "",
+      github: ""
     };
 
-    // Configure contact links without inventing personal information.
+    document.getElementById("year").textContent = new Date().getFullYear();
+
     let enabledContacts = 0;
+
     Object.entries(CONFIG).forEach(([key, value]) => {
-      const link = document.getElementById('contact-' + key);
+      const link = document.getElementById("contact-" + key);
+      if (!link) return;
+
       value = value.trim();
-      const valid = key === 'email'
-        ? /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
-        : (() => { try { return new URL(value).protocol === 'https:'; } catch { return false; } })();
+      let valid = false;
+
+      if (key === "email") {
+        valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+      } else {
+        try {
+          valid = new URL(value).protocol === "https:" &&
+            value.length > 0;
+        } catch {
+          valid = false;
+        }
+      }
+
       if (!valid) return;
-      link.href = key === 'email' ? 'mailto:' + value : value;
-      link.removeAttribute('aria-disabled');
-      link.removeAttribute('role');
-      link.querySelector('small').textContent = key === 'email' ? value : 'Visit my profile';
-      if (key !== 'email') { link.target = '_blank'; link.rel = 'noopener noreferrer'; link.setAttribute('aria-label', key + ' profile (opens in a new tab)'); }
+
+      link.href = key === "email" ? "mailto:" + value : value;
+      link.removeAttribute("aria-disabled");
+
+      const small = link.querySelector("small");
+      small.textContent = key === "email" ? value : "Visit my profile";
+
+      if (key !== "email") {
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+      }
+
       enabledContacts++;
     });
-    if (enabledContacts === 3) document.getElementById('contact-note').hidden = true;
-    document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Accessible mobile navigation: keyboard toggle, Escape, and close on selection.
-    const toggle = document.getElementById('menu-toggle');
-    const navigation = document.getElementById('nav-links');
-    function setMenu(open) {
-      navigation.classList.toggle('open', open);
-      toggle.setAttribute('aria-expanded', String(open));
-      toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
-      toggle.querySelector('i').className = open ? 'fa fa-times' : 'fa fa-bars';
+    if (enabledContacts === 3) {
+      document.getElementById("contact-note").hidden = true;
     }
-    toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
-    navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-      if (toggle.getAttribute('aria-expanded') === 'true') {
-        setMenu(false);
-        const destination = document.querySelector(link.getAttribute('href'));
-        destination.setAttribute('tabindex', '-1');
-        destination.focus({preventScroll:true});
-      }
-    }));
-    document.addEventListener('keydown', event => {
-      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') { setMenu(false); toggle.focus(); }
-    });
-    document.addEventListener('click', event => { if (!event.target.closest('.topbar')) setMenu(false); });
-    const desktopQuery = matchMedia('(min-width:768px)');
-    if (desktopQuery.addEventListener) desktopQuery.addEventListener('change', () => setMenu(false));
 
-    // Progressive enhancement: content stays visible if observers are unsupported.
-    if ('IntersectionObserver' in window) {
-      if (!matchMedia('(prefers-reduced-motion:reduce)').matches) {
-        const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
-          if (entry.isIntersecting) { entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); }
-        }), {threshold:0.08});
-        document.documentElement.classList.add('motion-ready');
-        document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
+    // Accessible mobile navigation.
+    const toggle = document.getElementById("menu-toggle");
+    const navigation = document.getElementById("nav-links");
+
+    function setMenu(open) {
+      navigation.classList.toggle("open", open);
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute(
+        "aria-label",
+        open ? "Close navigation" : "Open navigation"
+      );
+      toggle.querySelector("i").className =
+        open ? "fa fa-times" : "fa fa-bars";
+    }
+
+    toggle.addEventListener("click", () => {
+      setMenu(toggle.getAttribute("aria-expanded") !== "true");
+    });
+
+    navigation.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        setMenu(false);
+        navigation.querySelectorAll("a").forEach(item => {
+          item.classList.remove("active");
+        });
+        link.classList.add("active");
+      });
+    });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") {
+        setMenu(false);
       }
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 700) setMenu(false);
+    });
+
+    // Reveal sections as they enter the viewport.
+    if ("IntersectionObserver" in window) {
+      const revealObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08 });
+
+      document.querySelectorAll(".reveal").forEach(element => {
+        revealObserver.observe(element);
+      });
+
       const sectionObserver = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (!entry.isIntersecting) return;
-          navigation.querySelectorAll('a').forEach(link => {
-            if (link.getAttribute('href') === '#' + entry.target.id) link.setAttribute('aria-current', 'location');
-            else link.removeAttribute('aria-current');
+
+          const currentId = entry.target.id;
+
+          navigation.querySelectorAll("a").forEach(link => {
+            link.classList.toggle(
+              "active",
+              link.getAttribute("href") === "#" + currentId
+            );
           });
         });
-      }, {rootMargin:'-20% 0px -55% 0px', threshold:0});
-      document.querySelectorAll('main > section').forEach(section => sectionObserver.observe(section));
+      }, { rootMargin: "-25% 0px -60% 0px" });
+
+      document.querySelectorAll("main > section").forEach(section => {
+        sectionObserver.observe(section);
+      });
+    } else {
+      document.querySelectorAll(".reveal").forEach(element => {
+        element.classList.add("visible");
+      });
     }
   </script>
-  <noscript><style>@media(max-width:767px){.menu-toggle{display:none}.nav-links{position:static;display:flex;flex-direction:row;flex-wrap:wrap;padding:0;border:0;box-shadow:none;background:transparent}.nav-inner{flex-wrap:wrap;padding:12px 0}.hero{padding-top:210px}html{scroll-padding-top:190px}}</style></noscript>
 </body>
 </html>
